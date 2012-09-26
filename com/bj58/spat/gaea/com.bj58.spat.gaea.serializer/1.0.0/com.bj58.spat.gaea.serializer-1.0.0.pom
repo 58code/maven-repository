@@ -2,14 +2,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bj58.spat.gaea</groupId>
-	<artifactId>serializer</artifactId>
+	<artifactId>com.bj58.spat.gaea.serializer</artifactId>
 	<version>1.0.0</version>
-	<name>serializer</name>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<github.maven.repository>file://E:\git\maven-repository\maven-repository\</github.maven.repository>
-	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>github.repo</id>
+			<url>file://E:/git/maven-repository/maven-repository</url>
+		</repository>
+	</distributionManagement>
+
 
 	<dependencies>
 		<dependency>
@@ -46,14 +49,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<distributionManagement>
-		<repository>
-			<id>maven-repository</id>
-			<url>${github.maven.repository}</url>
-		</repository>
-	</distributionManagement>
-
 
 </project>
 
